@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="room-image">
+            <img src="images/home-img-1.jpg" alt="Room Image">
+        </div>
+        <div class="room-details">
+            <h2>Presidential room</h2>
+            <div class="room-options">
+                <div class="option">
+                    <div class="description">
+                        <h3>having  Breakfast + Extra Benefit</h3>
+                        <p>Non-refundable</p>
+                        <p>Free Welcome Drinks voucher per stay</p>
+                        <p>1 king bed</p>
+                    </div>
+                    <div class="pricing">
+                        <p>Rp 6.111.328</p>
+                        <button onclick="chooseOption('Presidential room', 'having Breakfast + Extra Benefit', 'Rp 6.111.328')">Choose</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="description">
+                        <h3>Without Breakfast</h3>
+                        <p>Non-refundable</p>
+                        <p>1 Double Bed</p>
+                    </div>
+                    <div class="pricing">
+                        <p>Rp 4.533.864</p>
+                        <button onclick="chooseOption('Presidential room', 'Without Breakfast', 'Rp 4.533.864')">Choose</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="description">
+                        <h3>Without Breakfast</h3>
+                        <p>Non-refundable</p>
+                        <p>2 single Bed</p>
+                    </div>
+                    <div class="pricing">
+                        <p>Rp 5.669.331</p>
+                        <button onclick="chooseOption('Presidential room', 'Without Breakfast', 'Rp 5.669.331')">Choose</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+    <script>
+        function chooseOption(roomType, optionDescription, price) {
+            window.location.href = `booking.html?roomType=${encodeURIComponent(roomType)}&optionDescription=${encodeURIComponent(optionDescription)}&price=${encodeURIComponent(price)}`;
+        }
+    </script>
+</body>
+</html>

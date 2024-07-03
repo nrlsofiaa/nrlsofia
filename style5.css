@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.room-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.room-details {
+    padding: 20px 0;
+}
+
+.room-details h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.amenities p {
+    margin: 5px 0;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.details-link, .all-types-link {
+    display: inline-block;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.room-options .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.option .description {
+    max-width: 60%;
+}
+
+.option .description h3 {
+    margin: 0 0 5px;
+}
+
+.option .description p {
+    margin: 0 0 10px;
+}
+
+.option .details {
+    text-align: right;
+}
+
+.option .details p {
+    margin: 0;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e03e00;
+}

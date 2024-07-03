@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Selection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="room-details">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/istockphoto-1924403627-612x612.jpg" alt="Room Image">
+                        <div class="room-info">
+                            <h2>First Class Queen</h2>
+                            <p>Harga terbaik untuk kamar dengan Balkon atau Teras</p>
+                            <div class="icons">
+                                <span>19.0 m²</span>
+                                <span>Bebas Asap Rokok</span>
+                                <span>Shower</span>
+                                <span>Balkon / teras</span>
+                                <span>Kulkas</span>
+                                <span>Air panas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional slides can be added here -->
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="room-options">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pilihan Kamar</th>
+                        <th>Tamu</th>
+                        <th>Harga/kamar/malam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>First Class Queen - Room Only Semi Flex</p>
+                            <p>Tanpa Sarapan<br>Tidak Bisa Refund</p>
+                            <p><i class="fas fa-bed"></i> 1 Queen Bed</p>
+                        </td>
+                        <td><i class="fas fa-user-friends"></i></td>
+                        <td>
+                            <p><del>Rp 3.187.085</del></p>
+                            <p class="price">Rp 2.390.314</p>
+                            <p>Di luar pajak & biaya</p>
+                            <button class="btn">Pilih</button>
+                        </td>
+                    </tr>
+                    <!-- Additional rows can be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

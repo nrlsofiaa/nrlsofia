@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book a Room</h2>
+        <form>
+            <label for="roomType">Room Type</label>
+            <input type="text" id="roomType" name="roomType" readonly>
+
+            <label for="optionDescription">Option Description</label>
+            <input type="text" id="optionDescription" name="optionDescription" readonly>
+
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" readonly>
+
+            <label for="date">Booking Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Booking Time</label>
+            <input type="time" id="time" name="time">
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const roomType = urlParams.get('roomType');
+            const optionDescription = urlParams.get('optionDescription');
+            const price = urlParams.get('price');
+
+            document.getElementById('roomType').value = roomType;
+            document.getElementById('optionDescription').value = optionDescription;
+            document.getElementById('price').value = price;
+        });
+    </script>
+</body>
+</html>
